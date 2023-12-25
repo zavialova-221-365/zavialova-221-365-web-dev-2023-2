@@ -1,0 +1,57 @@
+
+
+* {
+    font-family: 'Arial', serif;
+    /* font-size: 18px; */
+}
+
+
+body {
+    background-image: url(./pic.jpg);
+    color:rgb(46, 73, 62);
+    font-weight: bold;
+    font-size: large;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(173, 179, 170);
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.container {
+    max-width: 60%;
+    margin: 0 auto;
+    background-color:rgb(185, 216, 179);
+    border-radius:  40px;
+    padding: 15px;
+    max-width: 50%;
+}
+
+.form-group {
+    margin: 10px 10px;
+}
+
+fieldset {
+    border: none;
+}
+
+.btn {
+    background-color: rgb(215, 218, 216);
+    color: rgb(68, 85, 77);
+    border-color: rgb(215, 218, 216);
+    border-radius: 10%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.input {
+    font-size: 20px;
+}
+
+.send {
+    margin-left: 15px;
+}

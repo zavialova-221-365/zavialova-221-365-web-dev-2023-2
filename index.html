@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Форма обратной связи</title>
+</head>
+<body>
+
+    <h1>Форма обратной связи. Фитнес зал "Кремень"</h1>
+    <div class="container">
+
+        <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+
+            <div class="form-group">
+                <label for="fio">ФИО</label>
+                <input  class="input" type="text" id="fio" name="fio" placeholder="Введите ФИО">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input class="input" type="email" name="email" id="email" placeholder="Введите email">
+            </div>
+
+            <fieldset>
+                <legend>Как вы о нас узнали?</legend>
+                <div class="form-group">
+
+                    <input type="radio" name="sourse" id="adv" value="adv">
+                    <label for="adv">Реклама</label>
+                </div>
+                <div class="form-group">
+
+                    <input type="radio" name="sourse" id="friends" value="friends">
+                    <label for="friends">Друзья</label>
+                </div>
+                <div class="form-group">
+
+                    <input type="radio" name="sourse" id="tv" value="tv">
+                    <label for="tv">Социальные сети</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Категория обращения</legend>
+                <select name="type" id="type">
+                    <option class="input" value="order">Отзыв</option>
+                    <option class="input" value="negative">Жалоба</option>
+                    <option class="input" value="offer">Предложение</option>
+                    <option class="input" value="positive">Помощь</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Текст сообщения</legend>
+                <textarea class="input" name="message" id="message" cols="50" rows="6" placeholder="Пишите сообщение сюда"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Фото для отзыва</legend>
+                <input class="btn" type="file" name="file" id="file">
+            </fieldset>
+
+            <div class="form-group">
+                <input type="checkbox" name="agree" id="agree">
+                <label for="email">Даю согласие на обработку персональных данных</label>
+            </div>
+
+            <input class="btn send" type="submit" value="Отправить">
+
+        </form>
+    </div>
+</body>
+</html>
